@@ -15,7 +15,7 @@ def run(language):
                 prayer = prayer_file.read()
             print(prayer)
             key = language + str(iteration)
-            gTTS(prayer, language).save("sound_files_dump\\temp" + key + ".mp3")
+            gTTS(prayer, lang=language).save("sound_files_dump\\temp" + key + ".mp3")
             playsound("sound_files_dump\\temp" + key + ".mp3")
             iteration += 1
 
